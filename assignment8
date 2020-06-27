@@ -1,0 +1,103 @@
+Name:M.Sai Vindhya
+Roll no:321910304012
+
+
+#program to calculate the length of a string
+str=input("enter the string:")
+x=len(str)
+print(x)
+
+
+#program to count the number of characters (character frequency) in a string
+str=input("enter string:")
+s1=set(str)
+l1=list(s1)
+print(l1)
+l1.sort()
+print(l1)
+cl=[]
+for i in l1:
+    c=0
+    for j in str:
+        if j==i:
+            c=c+1
+    cl.append(c)
+d={}
+j=0
+for i in l1:
+    d[i]=cl[j]
+    j=j+1
+print(d)
+
+
+#program to get a single string from two given strings,separated by a space and swap the first two characters of each string
+str=input("enter string:")
+l1=str.split(' ')
+print(l1)
+str1=l1[0]
+print(str1)
+str2=l1[1]
+print(str2)
+str1c=str2[0]+str1[1:]
+str2c=str1[0]+str2[1:]
+print(str1,str2)
+print(str1c,str2c)
+
+
+#Python script that takes input from the user and displays that input back in upper and lower cases
+str=input("enter the string:")
+stru=str.upper()
+print("string in upper cases:",stru)
+strl=str.lower()
+print("string in lower cases:",strl)
+
+
+# program to remove a newline in Python
+str='sai vindhya\n'
+print(str)
+print(str.rstrip()
+
+
+#program to count occurrences of a substring in a string
+str=input("enter string:")
+sub_str=input("enter string to be searched:")
+l1=str.split(' ')
+print(l1)
+c=0
+for i in l1:
+    if sub_str==i:
+        c=c+1
+print('count of ',sub_str,'in string',str,'is:\n',c)
+
+
+#program to convert a string in a list
+str=input("enter the string:")
+l1=list(str)
+print(l1)
+
+
+#program to perform Deletion of a character
+str=input("enter string:")
+c=input("enter character to be deleted:")
+l1=list(str)
+l1.remove(c)
+str1=''
+for i in l1:
+    str1=str1+i
+print(str1)
+
+
+#program to print every character of a string entered by user in a new line using loop
+str=input("enter the string:")
+l1=list(str)
+for i in l1:
+    print(i)
+    
+    
+#program to find the length of the string "refrigerator" without using len function
+str='refrigerator'
+l1=list(str)
+c=0
+for i in l1:
+    c=c+1
+print(c)
